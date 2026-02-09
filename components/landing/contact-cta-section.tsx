@@ -12,9 +12,10 @@ export function ContactCtaSection() {
       {/* Decorative warm wave at top */}
       <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-transparent via-warm/40 to-transparent" />
       <div className="mx-auto max-w-3xl px-4 text-center">
-        <h2 className="mb-4 text-3xl font-extrabold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-3xl font-extrabold text-foreground md:text-4xl">
           {t("cta.title")}
         </h2>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-4 h-10 w-auto" />
         <p className="mb-2 text-xl font-semibold text-muted-foreground">{t("cta.subtitle")}</p>
         <p className="mb-8 text-muted-foreground">{t("cta.description")}</p>
 

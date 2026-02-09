@@ -46,7 +46,7 @@ export function FaqSection() {
         <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("faq.title")}
         </h2>
-        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-8 w-auto" />
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-10 w-auto" />
 
         <Accordion type="single" collapsible className="w-full">
           {faqItems.map((item, i) => (

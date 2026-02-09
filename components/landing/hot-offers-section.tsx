@@ -54,7 +54,7 @@ export function HotOffersSection() {
         <div className="mb-12 flex items-center gap-3">
           <Flame className="h-8 w-8 text-warm" />
           <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">{t("hot.title")}</h2>
-          <img src="/separator-tl.svg" alt="" className="ml-2 h-6 w-auto" />
+          <img src="/separator-tl.svg" alt="" className="ml-3 h-[3.25rem] w-auto self-center" />
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

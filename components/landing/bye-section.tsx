@@ -19,7 +19,7 @@ export function ByeSection() {
           {t("bye.title")}
         </h2>
         {/* Warm decorative accent */}
-        <img src="/separator-ltl.svg" alt="" className="mx-auto mt-4 h-8 w-auto" />
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mt-4 h-10 w-auto" />
       </div>
     </section>
   )

@@ -14,9 +14,10 @@ export function CitySection() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
 
-            <h2 className="mb-6 text-3xl font-extrabold text-foreground md:text-4xl">
+            <h2 className="mb-2 text-3xl font-extrabold text-foreground md:text-4xl">
               {t("city.title")}
             </h2>
+            <img src="/separator-tl.svg" alt="" className="mb-6 h-10 w-auto" />
             <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
               {t("city.description")}
             </p>

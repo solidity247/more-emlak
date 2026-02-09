@@ -53,7 +53,7 @@ export function WhyMersinSection() {
         <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("why.title")}
         </h2>
-        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-8 w-auto" />
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-10 w-auto" />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {advantages.map((adv) => (

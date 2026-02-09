@@ -22,16 +22,13 @@ export function TeamSection() {
 
   return (
     <section className="relative bg-background py-16 md:py-24">
-      {/* Warm decorative dots pattern */}
-      <div className="absolute right-8 top-8 grid grid-cols-3 gap-2 opacity-20">
-        {Array.from({ length: 9 }).map((_, i) => (
-          <div key={i} className="h-1.5 w-1.5 rounded-full bg-warm" />
-        ))}
-      </div>
+      {/* Warm decorative accent */}
+      <img src="/separator-lt.svg" alt="" className="absolute right-8 top-8 h-10 w-auto opacity-20" />
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-extrabold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("team.title")}
         </h2>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-10 w-auto" />
 
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {teamMembers.map((member) => (

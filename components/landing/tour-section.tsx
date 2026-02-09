@@ -29,9 +29,10 @@ export function TourSection() {
     <section className="bg-card py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
 
-        <h2 className="mb-4 text-center text-3xl font-extrabold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("tour.title")}
         </h2>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-4 h-10 w-auto" />
 
         {/* Image carousel / gallery */}
         <div className="mb-12 mt-8 flex gap-3 overflow-x-auto pb-4">

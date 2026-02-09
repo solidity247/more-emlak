@@ -12,9 +12,10 @@ export function FounderSection() {
   return (
     <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-extrabold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("founder.title")}
         </h2>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-12 h-10 w-auto" />
         <div className="mx-auto max-w-4xl">
           <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
             <div className="shrink-0">
