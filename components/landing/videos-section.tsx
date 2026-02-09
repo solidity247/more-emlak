@@ -20,7 +20,8 @@ export function VideosSection() {
             <Play className="h-8 w-8 text-primary" />
             <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">{t("videos.title")}</h2>
           </div>
-          <p className="text-lg text-muted-foreground">{t("videos.subtitle")}</p>
+          <img src="/separator-ltl.svg" alt="" className="mx-auto mt-2 h-10 w-auto" />
+          <p className="mt-4 text-lg text-muted-foreground">{t("videos.subtitle")}</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">

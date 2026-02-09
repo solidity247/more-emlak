@@ -33,9 +33,10 @@ export function MersinTextSection() {
   return (
     <section className="bg-card py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-4">
-        <h2 className="mb-8 text-center text-3xl font-extrabold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("mersin.title")}
         </h2>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mb-8 h-10 w-auto" />
 
         <div className="flex flex-col gap-4">
           {displayParagraphs.map((p, i) => (

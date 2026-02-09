@@ -13,13 +13,11 @@ export function CitySection() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
-            <div className="mb-3 flex items-center gap-2">
-              <div className="h-1 w-8 rounded-full bg-warm" />
-              <div className="h-1 w-4 rounded-full bg-warm/50" />
-            </div>
-            <h2 className="mb-6 text-3xl font-extrabold text-foreground md:text-4xl">
+
+            <h2 className="mb-2 text-3xl font-extrabold text-foreground md:text-4xl">
               {t("city.title")}
             </h2>
+            <img src="/separator-tl.svg" alt="" className="mb-6 h-10 w-auto" />
             <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
               {t("city.description")}
             </p>

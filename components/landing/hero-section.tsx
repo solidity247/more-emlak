@@ -58,12 +58,8 @@ export function HeroSection() {
             <p className="text-2xl font-extrabold">30%</p>
             <p className="text-xs font-medium">{t("city.invest")}</p>
           </div>
-          {/* Decorative warm sun-ray dots */}
-          <div className="absolute -right-3 top-8 flex flex-col gap-2">
-            <div className="h-2 w-2 rounded-full bg-warm/60" />
-            <div className="h-3 w-3 rounded-full bg-warm/40" />
-            <div className="h-2 w-2 rounded-full bg-warm/20" />
-          </div>
+          {/* Decorative warm accent */}
+          <img src="/separator-lt.svg" alt="" className="absolute -right-6 top-6 h-10 w-auto opacity-60" />
         </div>
       </div>
     </section>
