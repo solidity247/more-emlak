@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useLocale } from "@/lib/locale-context"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { useLocale } from "@/lib/locale-context";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
-  const { t } = useLocale()
+  const { t } = useLocale();
 
   return (
     <section className="relative overflow-hidden bg-card">
@@ -33,14 +33,27 @@ export function HeroSection() {
             Mersin, Turkey
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
               <Link href="/catalog">
                 {t("hero.cta")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 bg-transparent">
-              <a href="https://wa.me/905010031633" target="_blank" rel="noopener noreferrer">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+            >
+              <a
+                href="https://wa.me/905010031633"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {t("founder.cta")}
               </a>
             </Button>
@@ -59,9 +72,13 @@ export function HeroSection() {
             <p className="text-xs font-medium">{t("city.invest")}</p>
           </div>
           {/* Decorative warm accent */}
-          <img src="/separator-lt.svg" alt="" className="absolute -right-6 top-6 h-10 w-auto opacity-60" />
+          <img
+            src="/separator-ltl.svg"
+            alt=""
+            className="absolute -right-6 top-6 h-10 w-auto opacity-60"
+          />
         </div>
       </div>
     </section>
-  )
+  );
 }
