@@ -19,11 +19,7 @@ export function ByeSection() {
           {t("bye.title")}
         </h2>
         {/* Warm decorative accent */}
-        <div className="mx-auto mt-4 flex items-center justify-center gap-1">
-          <div className="h-0.5 w-10 bg-warm/30" />
-          <div className="h-1.5 w-1.5 rounded-full bg-warm" />
-          <div className="h-0.5 w-10 bg-warm/30" />
-        </div>
+        <img src="/separator-ltl.svg" alt="" className="mx-auto mt-4 h-8 w-auto" />
       </div>
     </section>
   )
