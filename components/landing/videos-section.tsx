@@ -18,7 +18,7 @@ export function VideosSection() {
         <div className="mb-12 text-center">
           <div className="mb-4 flex items-center justify-center gap-2">
             <Play className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl font-bold text-foreground md:text-4xl">{t("videos.title")}</h2>
+            <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">{t("videos.title")}</h2>
           </div>
           <p className="text-lg text-muted-foreground">{t("videos.subtitle")}</p>
         </div>

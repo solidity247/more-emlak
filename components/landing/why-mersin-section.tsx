@@ -46,11 +46,18 @@ export function WhyMersinSection() {
   ]
 
   return (
-    <section className="bg-card py-16 md:py-24">
+    <section className="relative bg-card py-16 md:py-24">
+      {/* Warm corner accents */}
+      <div className="absolute left-0 top-0 h-32 w-32 rounded-br-full bg-warm/5" />
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("why.title")}
         </h2>
+        <div className="mx-auto mb-12 flex items-center justify-center gap-1">
+          <div className="h-0.5 w-8 bg-primary/40" />
+          <div className="h-1 w-3 rounded-full bg-warm" />
+          <div className="h-0.5 w-8 bg-primary/40" />
+        </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {advantages.map((adv) => (

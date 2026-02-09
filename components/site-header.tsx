@@ -60,6 +60,8 @@ export function SiteHeader() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+        {/* Warm accent strip at very top */}
+        <div className="absolute left-0 right-0 top-0 h-0.5 bg-gradient-to-r from-primary via-warm to-primary" />
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center gap-2">

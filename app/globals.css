@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 @layer utilities {
@@ -33,8 +33,11 @@ body {
     --border: 195 20% 88%;
     --input: 195 20% 88%;
     --ring: 178 55% 40%;
+    --warm: 38 92% 50%;
+    --warm-foreground: 30 60% 12%;
+    --warm-muted: 40 80% 94%;
     --chart-1: 178 55% 40%;
-    --chart-2: 195 50% 50%;
+    --chart-2: 38 92% 50%;
     --chart-3: 210 40% 55%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
@@ -69,8 +72,11 @@ body {
     --border: 200 15% 18%;
     --input: 200 15% 18%;
     --ring: 178 55% 45%;
+    --warm: 38 85% 45%;
+    --warm-foreground: 40 90% 95%;
+    --warm-muted: 38 40% 15%;
     --chart-1: 178 55% 50%;
-    --chart-2: 195 50% 55%;
+    --chart-2: 38 85% 45%;
     --chart-3: 210 40% 60%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;

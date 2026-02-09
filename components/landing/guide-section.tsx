@@ -8,7 +8,9 @@ export function GuideSection() {
   const { t } = useLocale()
 
   return (
-    <section className="bg-card py-16 md:py-24">
+    <section className="relative bg-card py-16 md:py-24">
+      {/* Warm accent strip */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-warm/30 to-transparent" />
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex flex-col items-center gap-8 md:flex-row">
           <div className="shrink-0">

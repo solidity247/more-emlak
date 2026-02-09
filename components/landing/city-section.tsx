@@ -7,11 +7,17 @@ export function CitySection() {
   const { t } = useLocale()
 
   return (
-    <section className="bg-card py-16 md:py-24">
+    <section className="relative bg-card py-16 md:py-24">
+      {/* Warm decorative corner accent */}
+      <div className="absolute right-0 top-0 h-40 w-40 rounded-bl-full bg-warm/5" />
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
+            <div className="mb-3 flex items-center gap-2">
+              <div className="h-1 w-8 rounded-full bg-warm" />
+              <div className="h-1 w-4 rounded-full bg-warm/50" />
+            </div>
+            <h2 className="mb-6 text-3xl font-extrabold text-foreground md:text-4xl">
               {t("city.title")}
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-muted-foreground">

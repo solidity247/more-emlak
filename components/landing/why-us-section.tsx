@@ -18,7 +18,7 @@ export function WhyUsSection() {
   return (
     <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="mb-12 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("whyus.title")}
         </h2>
 
@@ -32,7 +32,7 @@ export function WhyUsSection() {
                 <stat.icon className="h-8 w-8 text-primary" />
               </div>
               {stat.value && (
-                <span className="text-4xl font-bold text-primary">{stat.value}</span>
+                <span className="text-4xl font-extrabold text-primary">{stat.value}</span>
               )}
               <span className="text-lg font-semibold text-card-foreground">{stat.label}</span>
               {stat.desc && (

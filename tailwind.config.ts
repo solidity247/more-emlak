@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-jakarta)', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -40,6 +43,11 @@ const config: Config = {
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
+        },
+        warm: {
+          DEFAULT: 'hsl(var(--warm))',
+          foreground: 'hsl(var(--warm-foreground))',
+          muted: 'hsl(var(--warm-muted))',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

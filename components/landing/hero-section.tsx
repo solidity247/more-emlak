@@ -10,7 +10,10 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-card">
+      {/* Warm decorative gradient orbs */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(178_55%_40%/0.08),transparent_60%)]" />
+      <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-warm/5 blur-3xl" />
+      <div className="absolute -bottom-10 left-1/4 h-60 w-60 rounded-full bg-warm/8 blur-3xl" />
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-20 md:flex-row md:py-28">
         <div className="relative z-10 flex flex-1 flex-col gap-6">
           <div className="flex items-center gap-3">
@@ -20,10 +23,10 @@ export function HeroSection() {
               className="h-16 w-auto md:h-20"
             />
           </div>
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             MORE EMLAK GROUP
           </h1>
-          <p className="text-xl text-muted-foreground md:text-2xl">
+          <p className="text-xl font-semibold text-muted-foreground md:text-2xl">
             {t("hero.subtitle")}
           </p>
           <p className="max-w-lg text-muted-foreground leading-relaxed">
@@ -51,9 +54,15 @@ export function HeroSection() {
               className="aspect-[4/3] w-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-4 -left-4 rounded-xl bg-primary p-4 text-primary-foreground shadow-lg">
-            <p className="text-2xl font-bold">30%</p>
-            <p className="text-xs">{t("city.invest")}</p>
+          <div className="absolute -bottom-4 -left-4 rounded-xl bg-warm p-4 text-warm-foreground shadow-lg">
+            <p className="text-2xl font-extrabold">30%</p>
+            <p className="text-xs font-medium">{t("city.invest")}</p>
+          </div>
+          {/* Decorative warm sun-ray dots */}
+          <div className="absolute -right-3 top-8 flex flex-col gap-2">
+            <div className="h-2 w-2 rounded-full bg-warm/60" />
+            <div className="h-3 w-3 rounded-full bg-warm/40" />
+            <div className="h-2 w-2 rounded-full bg-warm/20" />
           </div>
         </div>
       </div>

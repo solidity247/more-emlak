@@ -39,11 +39,18 @@ export function FaqSection() {
   const { t } = useLocale()
 
   return (
-    <section className="bg-background py-16 md:py-24">
+    <section className="relative bg-background py-16 md:py-24">
+      {/* Warm decorative corner */}
+      <div className="absolute left-0 top-0 h-24 w-24 rounded-br-full bg-warm/5" />
       <div className="mx-auto max-w-3xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="mb-2 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("faq.title")}
         </h2>
+        <div className="mx-auto mb-12 flex items-center justify-center gap-1.5">
+          <div className="h-0.5 w-6 bg-warm/40" />
+          <div className="h-2 w-2 rounded-full bg-warm" />
+          <div className="h-0.5 w-6 bg-warm/40" />
+        </div>
 
         <Accordion type="single" collapsible className="w-full">
           {faqItems.map((item, i) => (

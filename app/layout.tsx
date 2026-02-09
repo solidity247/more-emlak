@@ -1,12 +1,16 @@
 import React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Providers } from "@/components/providers"
 
 import "./globals.css"
 
-const _inter = Inter({ subsets: ["latin", "cyrillic"] })
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin", "cyrillic-ext"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
+})
 
 export const metadata: Metadata = {
   title: "MORE EMLAK GROUP | Агентство недвижимости в Мерсине",
@@ -21,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className={`${plusJakarta.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

@@ -8,7 +8,9 @@ export function SiteFooter() {
   const { t } = useLocale()
 
   return (
-    <footer className="border-t border-border bg-card text-card-foreground">
+    <footer className="relative border-t border-border bg-card text-card-foreground">
+      {/* Warm accent strip at top of footer */}
+      <div className="absolute left-0 right-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-warm/40 to-transparent" />
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
@@ -24,14 +26,14 @@ export function SiteFooter() {
 
           {/* Navigation */}
           <div className="flex flex-col gap-2">
-            <h4 className="mb-2 text-sm font-semibold text-foreground">{t("nav.catalog")}</h4>
+            <h4 className="mb-2 text-sm font-bold text-foreground">{t("nav.catalog")}</h4>
             <Link href="/catalog" className="text-sm text-muted-foreground hover:text-primary">{t("nav.catalog")}</Link>
             <Link href="/rent" className="text-sm text-muted-foreground hover:text-primary">{t("nav.rent")}</Link>
             <Link href="/resident-card" className="text-sm text-muted-foreground hover:text-primary">{t("nav.resident")}</Link>
           </div>
 
           <div className="flex flex-col gap-2">
-            <h4 className="mb-2 text-sm font-semibold text-foreground">{t("nav.about")}</h4>
+            <h4 className="mb-2 text-sm font-bold text-foreground">{t("nav.about")}</h4>
             <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">{t("nav.about.company")}</Link>
             <Link href="/about/whyus" className="text-sm text-muted-foreground hover:text-primary">{t("nav.about.whyus")}</Link>
             <Link href="/feedback" className="text-sm text-muted-foreground hover:text-primary">{t("nav.feedback")}</Link>
@@ -40,7 +42,7 @@ export function SiteFooter() {
 
           {/* Contact */}
           <div className="flex flex-col gap-3">
-            <h4 className="mb-2 text-sm font-semibold text-foreground">{t("nav.contacts")}</h4>
+            <h4 className="mb-2 text-sm font-bold text-foreground">{t("nav.contacts")}</h4>
             <a
               href="https://wa.me/905010031633"
               target="_blank"

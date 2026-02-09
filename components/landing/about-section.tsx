@@ -11,7 +11,7 @@ export function AboutSection() {
   return (
     <section className="bg-card py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-4">
-        <h2 className="mb-8 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="mb-8 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("aboutus.title")}
         </h2>
 

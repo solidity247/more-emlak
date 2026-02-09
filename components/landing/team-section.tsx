@@ -21,9 +21,15 @@ export function TeamSection() {
   const { t } = useLocale()
 
   return (
-    <section className="bg-background py-16 md:py-24">
+    <section className="relative bg-background py-16 md:py-24">
+      {/* Warm decorative dots pattern */}
+      <div className="absolute right-8 top-8 grid grid-cols-3 gap-2 opacity-20">
+        {Array.from({ length: 9 }).map((_, i) => (
+          <div key={i} className="h-1.5 w-1.5 rounded-full bg-warm" />
+        ))}
+      </div>
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="mb-12 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("team.title")}
         </h2>
 

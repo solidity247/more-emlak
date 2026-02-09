@@ -15,9 +15,15 @@ export function ByeSection() {
             className="aspect-[16/7] w-full object-cover"
           />
         </div>
-        <h2 className="text-3xl font-bold text-foreground md:text-4xl">
+        <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">
           {t("bye.title")}
         </h2>
+        {/* Warm decorative accent */}
+        <div className="mx-auto mt-4 flex items-center justify-center gap-1">
+          <div className="h-0.5 w-10 bg-warm/30" />
+          <div className="h-1.5 w-1.5 rounded-full bg-warm" />
+          <div className="h-0.5 w-10 bg-warm/30" />
+        </div>
       </div>
     </section>
   )

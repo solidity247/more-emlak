@@ -28,7 +28,12 @@ export function TourSection() {
   return (
     <section className="bg-card py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-4 text-center text-3xl font-bold text-foreground md:text-4xl">
+        <div className="mx-auto mb-2 flex items-center justify-center gap-2">
+          <div className="h-1 w-6 rounded-full bg-warm/50" />
+          <div className="h-1.5 w-10 rounded-full bg-warm" />
+          <div className="h-1 w-6 rounded-full bg-warm/50" />
+        </div>
+        <h2 className="mb-4 text-center text-3xl font-extrabold text-foreground md:text-4xl">
           {t("tour.title")}
         </h2>
 
@@ -72,8 +77,8 @@ export function TourSection() {
               key={item.text}
               className="flex flex-col items-center gap-3 rounded-xl border border-border bg-background p-6 text-center"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                <item.icon className="h-7 w-7 text-primary" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-warm/10">
+                <item.icon className="h-7 w-7 text-warm" />
               </div>
               <span className="text-sm font-medium text-foreground">{item.text}</span>
             </div>

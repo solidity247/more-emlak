@@ -52,8 +52,9 @@ export function HotOffersSection() {
     <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12 flex items-center gap-3">
-          <Flame className="h-8 w-8 text-destructive" />
-          <h2 className="text-3xl font-bold text-foreground md:text-4xl">{t("hot.title")}</h2>
+          <Flame className="h-8 w-8 text-warm" />
+          <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">{t("hot.title")}</h2>
+          <div className="ml-2 h-1 w-12 rounded-full bg-warm/50" />
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -68,7 +69,7 @@ export function HotOffersSection() {
                     alt={offer.title}
                     className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <Badge className="absolute left-3 top-3 bg-destructive text-destructive-foreground">
+                  <Badge className="absolute left-3 top-3 bg-warm text-warm-foreground">
                     {t("hot.badge")}
                   </Badge>
                 </div>
