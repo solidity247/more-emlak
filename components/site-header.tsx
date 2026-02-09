@@ -66,9 +66,9 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center gap-2">
             <img
-              src="https://static.tildacdn.com/tild6437-3362-4437-a137-303535643562/_.png"
+              src="/images/moreemlak-logo-clean-20.png"
               alt="More Emlak Group"
-              className="h-10 w-auto"
+              className="h-10 w-10 rounded-full"
             />
           </Link>
 

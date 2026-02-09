@@ -16,9 +16,9 @@ export function SiteFooter() {
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <img
-              src="https://static.tildacdn.com/tild6437-3362-4437-a137-303535643562/_.png"
+              src="/images/moreemlak-logo-clean-20.png"
               alt="More Emlak Group"
-              className="h-12 w-auto self-start"
+              className="h-14 w-14 rounded-full self-start"
             />
             <p className="text-sm text-muted-foreground">MORE EMLAK GROUP</p>
             <p className="text-xs text-muted-foreground">{t("hero.subtitle")}</p>

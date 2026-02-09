@@ -18,9 +18,9 @@ export function HeroSection() {
         <div className="relative z-10 flex flex-1 flex-col gap-6">
           <div className="flex items-center gap-3">
             <img
-              src="https://static.tildacdn.com/tild6437-3362-4437-a137-303535643562/_.png"
+              src="/images/moreemlak-logo-clean-20.png"
               alt="More Emlak Group logo"
-              className="h-16 w-auto md:h-20"
+              className="h-20 w-20 rounded-full md:h-24 md:w-24"
             />
           </div>
           <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
