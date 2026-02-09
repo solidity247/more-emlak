@@ -2,10 +2,45 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X, ChevronDown, Sun, Moon, Monitor, Phone, Globe } from "lucide-react"
+import { Menu, X, ChevronDown, Sun, Moon, Phone } from "lucide-react"
 import { useLocale } from "@/lib/locale-context"
 import { useAutoTheme } from "@/lib/auto-theme-provider"
 import { type Locale, localeNames } from "@/lib/i18n"
+
+const localeFlags: Record<Locale, string> = {
+  ru: "\u{1F1F7}\u{1F1FA}",
+  en: "\u{1F1EC}\u{1F1E7}",
+  tr: "\u{1F1F9}\u{1F1F7}",
+}
+
+function AutoThemeIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      {/* Left half: sun rays */}
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      {/* Circle with half fill */}
+      <circle cx="12" cy="12" r="5" />
+      {/* Dark half on the right */}
+      <path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none" />
+      {/* Right half: moon stars */}
+      <circle cx="19" cy="6" r="0.8" fill="currentColor" stroke="none" />
+      <circle cx="21" cy="10" r="0.5" fill="currentColor" stroke="none" />
+      <circle cx="20" cy="17" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -55,7 +90,7 @@ export function SiteHeader() {
     { label: t("nav.contacts"), href: "/contacts" },
   ]
 
-  const themeIcon = mode === "light" ? <Sun className="h-4 w-4" /> : mode === "dark" ? <Moon className="h-4 w-4" /> : <Monitor className="h-4 w-4" />
+  const themeIcon = mode === "light" ? <Sun className="h-4 w-4" /> : mode === "dark" ? <Moon className="h-4 w-4" /> : <AutoThemeIcon className="h-4 w-4" />
 
   return (
     <>
@@ -104,14 +139,15 @@ export function SiteHeader() {
             {/* Language selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-1 text-foreground">
-                  <Globe className="h-4 w-4" />
+                <Button variant="ghost" size="sm" className="gap-1.5 text-foreground">
+                  <span className="text-base leading-none" aria-hidden="true">{localeFlags[locale]}</span>
                   <span className="text-xs">{localeNames[locale]}</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 {(Object.keys(localeNames) as Locale[]).map((l) => (
-                  <DropdownMenuItem key={l} onClick={() => setLocale(l)}>
+                  <DropdownMenuItem key={l} onClick={() => setLocale(l)} className="gap-2">
+                    <span className="text-base leading-none" aria-hidden="true">{localeFlags[l]}</span>
                     {localeNames[l]}
                   </DropdownMenuItem>
                 ))}
@@ -127,7 +163,7 @@ export function SiteHeader() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem onClick={() => setMode("auto")}>
-                  <Monitor className="mr-2 h-4 w-4" />
+                  <AutoThemeIcon className="mr-2 h-4 w-4" />
                   {t("theme.auto")}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setMode("light")}>
