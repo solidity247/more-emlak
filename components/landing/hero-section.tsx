@@ -10,29 +10,42 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-card">
-      {/* Warm decorative gradient orbs */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(178_55%_40%/0.08),transparent_60%)]" />
-      <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-warm/5 blur-3xl" />
-      <div className="absolute -bottom-10 left-1/4 h-60 w-60 rounded-full bg-warm/8 blur-3xl" />
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-20 md:flex-row md:py-28">
-        <div className="relative z-10 flex flex-1 flex-col gap-6">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/moreemlak-logo-clean-20.png"
-              alt="More Emlak Group logo"
-              className="h-20 w-20 rounded-full md:h-24 md:w-24"
-            />
+      {/* Full-width team photo background */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/team-welcome.webp"
+          alt="More Emlak Group team welcoming you"
+          className="h-full w-full object-cover object-top"
+        />
+        {/* Warm gradient overlay from left for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/20 md:via-background/80 md:to-transparent" />
+        {/* Bottom fade for smooth transition */}
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-card to-transparent" />
+      </div>
+
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 md:py-32 lg:py-36">
+        <div className="flex max-w-xl flex-col gap-5">
+          {/* Warm welcome badge */}
+          <div className="flex items-center gap-2">
+            <span className="inline-block h-1.5 w-8 rounded-full bg-warm" />
+            <span className="text-sm font-semibold tracking-wider text-warm uppercase">
+              Mersin, Turkey
+            </span>
           </div>
+
           <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             MORE EMLAK GROUP
           </h1>
+
           <p className="text-xl font-semibold text-muted-foreground md:text-2xl">
             {t("hero.subtitle")}
           </p>
-          <p className="max-w-lg text-muted-foreground leading-relaxed">
-            Mersin, Turkey
+
+          <p className="max-w-md leading-relaxed text-muted-foreground">
+            {t("city.description").slice(0, 120)}...
           </p>
-          <div className="flex flex-wrap gap-3">
+
+          <div className="flex flex-wrap gap-3 pt-2">
             <Button
               asChild
               size="lg"
@@ -47,7 +60,7 @@ export function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 bg-transparent"
+              className="border-primary bg-background/60 text-primary backdrop-blur-sm hover:bg-primary/10"
             >
               <a
                 href="https://wa.me/905010031633"
@@ -58,25 +71,24 @@ export function HeroSection() {
               </a>
             </Button>
           </div>
-        </div>
-        <div className="relative flex-1">
-          <div className="overflow-hidden rounded-2xl shadow-2xl">
-            <img
-              src="/images/mersin-cityscape.jpg"
-              alt="Mersin, Turkey coastline"
-              className="aspect-[4/3] w-full object-cover"
-            />
+
+          {/* Trust indicators */}
+          <div className="mt-2 flex items-center gap-6">
+            <div className="flex flex-col">
+              <span className="text-2xl font-extrabold text-foreground">6+</span>
+              <span className="text-xs text-muted-foreground">{t("whyus.years")}</span>
+            </div>
+            <div className="h-8 w-px bg-border" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-extrabold text-foreground">200+</span>
+              <span className="text-xs text-muted-foreground">{t("whyus.objects")}</span>
+            </div>
+            <div className="h-8 w-px bg-border" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-extrabold text-warm">30%</span>
+              <span className="text-xs text-muted-foreground">{t("city.invest")}</span>
+            </div>
           </div>
-          <div className="absolute -bottom-4 -left-4 rounded-xl bg-warm p-4 text-warm-foreground shadow-lg">
-            <p className="text-2xl font-extrabold">30%</p>
-            <p className="text-xs font-medium">{t("city.invest")}</p>
-          </div>
-          {/* Decorative warm accent */}
-          <img
-            src="/separator-ltl.svg"
-            alt=""
-            className="absolute -right-6 top-6 h-10 w-auto opacity-60"
-          />
         </div>
       </div>
     </section>
