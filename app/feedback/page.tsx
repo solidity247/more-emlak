@@ -33,6 +33,9 @@ export default function FeedbackPage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4">
+          <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
+            {"Видео отзывы наших клиентов"}
+          </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {reviewVideoIds.map((id) => (
               <div key={id} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
