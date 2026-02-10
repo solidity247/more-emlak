@@ -104,7 +104,7 @@ export function HotOffersSection() {
                     </span>
                   </div>
                   <p className="text-lg font-bold text-primary">
-                    {t("hot.from")} ${offer.price.toLocaleString()}
+                    {t("hot.from")} ${offer.price.toLocaleString("en-US")}
                   </p>
                 </CardContent>
               </Card>
