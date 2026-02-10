@@ -140,14 +140,14 @@ export function SiteHeader() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-1.5 text-foreground">
-                  <span className="text-base leading-none" aria-hidden="true">{localeFlags[locale]}</span>
+                  <span className="text-base leading-none" aria-hidden="true" suppressHydrationWarning>{localeFlags[locale]}</span>
                   <span className="text-xs">{localeNames[locale]}</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 {(Object.keys(localeNames) as Locale[]).map((l) => (
                   <DropdownMenuItem key={l} onClick={() => setLocale(l)} className="gap-2">
-                    <span className="text-base leading-none" aria-hidden="true">{localeFlags[l]}</span>
+                    <span className="text-base leading-none" aria-hidden="true" suppressHydrationWarning>{localeFlags[l]}</span>
                     {localeNames[l]}
                   </DropdownMenuItem>
                 ))}

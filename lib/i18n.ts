@@ -59,7 +59,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "catalog.subtitle": "Более 200 объектов в нашем каталоге",
     // Videos
     "videos.title": "Мерсин изнутри",
-    "videos.subtitle": "Видео о городе от наших сотрудников",
+    "videos.subtitle": "Узнайте про жизнь города из наших видео",
     // Why Mersin
     "why.title": "Плюсы Мерсина",
     "why.eco.title": "Экологически чистый",
@@ -122,6 +122,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.light": "День",
     "theme.dark": "Ночь",
     // Footer
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "Все права защищены",
     // Catalog page
     "catalog.title": "Каталог недвижимости",
@@ -182,7 +183,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "catalog.cta": "View Apartments for Sale",
     "catalog.subtitle": "Over 200 properties in our catalog",
     "videos.title": "Mersin from Inside",
-    "videos.subtitle": "City videos from our team",
+    "videos.subtitle": "Learn about city life from our videos",
     "why.title": "Advantages of Mersin",
     "why.eco.title": "Eco-Friendly",
     "why.eco.text": "Clean sea and beaches. The coastline is cleaned daily. Mersin has a huge variety of exotic plants. The air here is incredibly clean.",
@@ -233,6 +234,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.auto": "Auto",
     "theme.light": "Day",
     "theme.dark": "Night",
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "All rights reserved",
     "catalog.title": "Property Catalog",
     "catalog.filter": "Filters",
@@ -290,7 +292,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "catalog.cta": "Satilik Daireleri Gor",
     "catalog.subtitle": "Katalogumuzda 200'den fazla mulk",
     "videos.title": "Iceriden Mersin",
-    "videos.subtitle": "Ekibimizden sehir videolari",
+    "videos.subtitle": "Videolarimizdan sehir hayatini kesfet",
     "why.title": "Mersin'in Avantajlari",
     "why.eco.title": "Cevre Dostu",
     "why.eco.text": "Temiz deniz ve plajlar. Kiyilar her gun temizlenir. Mersin'de bircok egzotik bitki vardir. Hava inanilmaz temizdir.",
@@ -341,6 +343,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.auto": "Oto",
     "theme.light": "Gunduz",
     "theme.dark": "Gece",
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "Tum haklari saklidir",
     "catalog.title": "Mulk Katalogu",
     "catalog.filter": "Filtreler",

@@ -25,7 +25,7 @@ export function PropertyCard({ property }: { property: Property }) {
         )}
         <div className="absolute bottom-3 right-3 rounded-lg bg-background/90 px-3 py-1 backdrop-blur">
           <p className="text-lg font-bold text-primary">
-            ${property.price.toLocaleString()}
+            ${property.price.toLocaleString("en-US")}
             {property.type === "rent" && "/mo"}
           </p>
         </div>
