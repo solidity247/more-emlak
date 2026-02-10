@@ -17,31 +17,33 @@ export function HeroSection() {
           alt="More Emlak Group team welcoming you"
           className="h-full w-full object-cover object-top"
         />
-        {/* Warm gradient overlay from left for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/20 md:via-background/80 md:to-transparent" />
+        {/* Mobile: dark scrim so text is readable but people stay visible */}
+        <div className="absolute inset-0 bg-black/50 md:hidden" />
+        {/* Desktop: left-to-right gradient overlay for text readability */}
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-background via-background/80 to-transparent md:block" />
         {/* Bottom fade for smooth transition */}
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-card to-transparent" />
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 md:py-32 lg:py-36">
-        <div className="flex max-w-xl flex-col gap-5">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col justify-center px-4 py-16 md:py-32 lg:py-36">
+        <div className="flex max-w-xl flex-col gap-4 md:gap-5">
           {/* Warm welcome badge */}
           <div className="flex items-center gap-2">
             <span className="inline-block h-1.5 w-8 rounded-full bg-warm" />
-            <span className="text-sm font-semibold tracking-wider text-warm uppercase">
+            <span className="text-sm font-semibold tracking-wider text-white uppercase md:text-warm">
               Mersin, Turkey
             </span>
           </div>
 
-          <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-3xl font-extrabold tracking-tight text-white md:text-5xl md:text-foreground lg:text-6xl">
             MORE EMLAK GROUP
           </h1>
 
-          <p className="text-xl font-semibold text-muted-foreground md:text-2xl">
+          <p className="text-lg font-semibold text-white/80 md:text-2xl md:text-muted-foreground">
             {t("hero.subtitle")}
           </p>
 
-          <p className="max-w-md leading-relaxed text-muted-foreground">
+          <p className="max-w-md text-sm leading-relaxed text-white/70 md:text-base md:text-muted-foreground">
             {t("city.description").slice(0, 120)}...
           </p>
 
@@ -60,7 +62,7 @@ export function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-primary bg-background/60 text-primary backdrop-blur-sm hover:bg-primary/10"
+              className="border-white/30 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20 md:border-primary md:bg-background/60 md:text-primary md:hover:bg-primary/10"
             >
               <a
                 href="https://wa.me/905010031633"
@@ -73,20 +75,20 @@ export function HeroSection() {
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-2 flex items-center gap-6">
+          <div className="mt-2 flex items-center gap-4 md:gap-6">
             <div className="flex flex-col">
-              <span className="text-2xl font-extrabold text-foreground">6+</span>
-              <span className="text-xs text-muted-foreground">{t("whyus.years")}</span>
+              <span className="text-xl font-extrabold text-white md:text-2xl md:text-foreground">6+</span>
+              <span className="text-xs text-white/60 md:text-muted-foreground">{t("whyus.years")}</span>
             </div>
-            <div className="h-8 w-px bg-border" />
+            <div className="h-8 w-px bg-white/20 md:bg-border" />
             <div className="flex flex-col">
-              <span className="text-2xl font-extrabold text-foreground">200+</span>
-              <span className="text-xs text-muted-foreground">{t("whyus.objects")}</span>
+              <span className="text-xl font-extrabold text-white md:text-2xl md:text-foreground">200+</span>
+              <span className="text-xs text-white/60 md:text-muted-foreground">{t("whyus.objects")}</span>
             </div>
-            <div className="h-8 w-px bg-border" />
+            <div className="h-8 w-px bg-white/20 md:bg-border" />
             <div className="flex flex-col">
-              <span className="text-2xl font-extrabold text-warm">30%</span>
-              <span className="text-xs text-muted-foreground">{t("city.invest")}</span>
+              <span className="text-xl font-extrabold text-warm md:text-2xl">30%</span>
+              <span className="text-xs text-white/60 md:text-muted-foreground">{t("city.invest")}</span>
             </div>
           </div>
         </div>
