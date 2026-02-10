@@ -122,6 +122,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.light": "День",
     "theme.dark": "Ночь",
     // Footer
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "Все права защищены",
     // Catalog page
     "catalog.title": "Каталог недвижимости",
@@ -233,6 +234,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.auto": "Auto",
     "theme.light": "Day",
     "theme.dark": "Night",
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "All rights reserved",
     "catalog.title": "Property Catalog",
     "catalog.filter": "Filters",
@@ -341,6 +343,7 @@ const dictionaries: Record<Locale, Record<string, string>> = {
     "theme.auto": "Oto",
     "theme.light": "Gunduz",
     "theme.dark": "Gece",
+    "footer.address": "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
     "footer.rights": "Tum haklari saklidir",
     "catalog.title": "Mulk Katalogu",
     "catalog.filter": "Filtreler",

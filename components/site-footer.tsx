@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useLocale } from "@/lib/locale-context"
-import { MessageCircle, Send } from "lucide-react"
+import { MessageCircle, Send, MapPin } from "lucide-react"
 
 export function SiteFooter() {
   const { t } = useLocale()
@@ -60,6 +60,15 @@ export function SiteFooter() {
             >
               <Send className="h-4 w-4" />
               Telegram
+            </a>
+            <a
+              href="https://maps.google.com/?q=Arpaçbahşiş+mahallesi+308+sokak+41a+no+7+more+emlak+33730+Mersin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2 text-sm text-muted-foreground hover:text-primary"
+            >
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+              {t("footer.address")}
             </a>
           </div>
         </div>
