@@ -30,8 +30,8 @@ export function HeroSection() {
               {t("hero.subtitle")}
             </p>
 
-            <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-              {t("city.description").slice(0, 120)}...
+            <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+              {t("city.description")}
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2">
