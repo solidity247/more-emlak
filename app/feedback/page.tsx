@@ -14,6 +14,8 @@ const reviewVideoIds = [
   "Cs3ic4ExoiQ",
   "28l9GneebyY",
   "ZcJTuGIG0Oo",
+  "81YiPpH1FEk",
+  "HV7kOcW5wDk",
 ]
 
 export default function FeedbackPage() {
