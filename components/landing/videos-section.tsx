@@ -4,9 +4,9 @@ import { useLocale } from "@/lib/locale-context"
 import { Play } from "lucide-react"
 
 const videoIds = [
-  "dQw4w9WgXcQ",
-  "jNQXAC9IVRw",
-  "9bZkp7q19f0",
+  "GgUlF2zg39g",
+  "AX0cksYsbOg",
+  "rkIe42WPS20",
 ]
 
 export function VideosSection() {
