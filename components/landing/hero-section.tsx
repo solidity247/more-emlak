@@ -34,7 +34,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            MORE EMLAK GROUP
+            MORE EMLAK GROUP 777
           </h1>
 
           <p className="text-xl font-semibold text-muted-foreground md:text-2xl">
