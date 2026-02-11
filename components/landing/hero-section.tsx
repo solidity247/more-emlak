@@ -124,10 +124,13 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right: Secondary image or accent */}
-            <div className="relative mt-8 h-64 md:mt-0 md:h-auto md:w-1/2">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-warm/10 rounded-xl" />
-              <div className="h-full w-full rounded-xl border border-border/50" />
+            {/* Right: Agency showcase image */}
+            <div className="relative mt-8 h-64 overflow-hidden rounded-xl md:mt-0 md:h-auto md:w-1/2">
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipOU24WFBDTuhHPbwy6_swvU_UkpKWVb4AbGYo2W=s451-k-no"
+                alt="More Emlak Group agency"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
