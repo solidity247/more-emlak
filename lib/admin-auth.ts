@@ -3,7 +3,7 @@
 
 const ADMIN_CREDENTIALS = {
   username: "admin",
-  password: "MoreEmlak2024!",
+  password: "password",
 }
 
 export function validateCredentials(username: string, password: string): boolean {
