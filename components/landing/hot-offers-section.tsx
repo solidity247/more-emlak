@@ -55,15 +55,17 @@ export function HotOffersSection() {
   return (
     <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-12 flex items-center gap-3">
-          <Flame className="h-8 w-8 text-warm" />
-          <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">
-            {t("hot.title")}
-          </h2>
+        <div className="mb-12">
+          <div className="flex items-center gap-3">
+            <Flame className="h-8 w-8 text-warm" />
+            <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">
+              {t("hot.title")}
+            </h2>
+          </div>
           <img
             src="/separator-ltl.svg"
             alt=""
-            className="mx-auto mt-4 h-10 w-auto"
+            className="mt-2 h-10 w-auto"
           />
         </div>
 
@@ -102,7 +104,7 @@ export function HotOffersSection() {
                     </span>
                   </div>
                   <p className="text-lg font-bold text-primary">
-                    {t("hot.from")} ${offer.price.toLocaleString()}
+                    {t("hot.from")} ${offer.price.toLocaleString("en-US")}
                   </p>
                 </CardContent>
               </Card>

@@ -27,8 +27,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Адрес",
-    value: "Mersin, Turkey",
-    href: null,
+    value: "Arpaçbahşiş mah. 308 sok., 41a, no: 7, More Emlak, 33730, Mersin",
+    href: "https://maps.google.com/?q=Arpaçbahşiş+mahallesi+308+sokak+41a+no+7+more+emlak+33730+Mersin",
   },
   {
     icon: Clock,
@@ -88,7 +88,7 @@ export default function ContactsPage() {
           {/* Map placeholder */}
           <div className="mt-12 overflow-hidden rounded-2xl border border-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204001.64064!2d34.4!3d36.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15275d21cf20e401%3A0xc5a2c1f25e27e9e!2sMersin%2C%20Turkey!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d34.63!3d36.80!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQXJwYcOnYmFoxZ9pxZ8gbWFoLiAzMDggc29rLiA0MWEsIDMzNzMwIE1lcnNpbg!5e0!3m2!1sen!2str"
               width="100%"
               height="400"
               style={{ border: 0 }}

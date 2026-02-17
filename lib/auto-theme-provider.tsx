@@ -21,6 +21,7 @@ function getAutoTheme(): "light" | "dark" {
 }
 
 export function AutoThemeProvider({ children }: { children: ReactNode }) {
+  const [mounted, setMounted] = useState(false)
   const [mode, setModeState] = useState<ThemeMode>("auto")
   const { setTheme } = useTheme()
 
@@ -38,28 +39,28 @@ export function AutoThemeProvider({ children }: { children: ReactNode }) {
   const setMode = useCallback(
     (m: ThemeMode) => {
       setModeState(m)
-      if (typeof window !== "undefined") {
-        localStorage.setItem("theme-mode", m)
-      }
+      localStorage.setItem("theme-mode", m)
       applyTheme(m)
     },
     [applyTheme]
   )
 
+  // Only read localStorage and apply theme after mount to avoid hydration mismatch
   useEffect(() => {
     const saved = localStorage.getItem("theme-mode") as ThemeMode | null
     const initialMode = saved || "auto"
     setModeState(initialMode)
     applyTheme(initialMode)
+    setMounted(true)
   }, [applyTheme])
 
   useEffect(() => {
-    if (mode !== "auto") return
+    if (!mounted || mode !== "auto") return
     const interval = setInterval(() => {
       applyTheme("auto")
     }, 60_000)
     return () => clearInterval(interval)
-  }, [mode, applyTheme])
+  }, [mode, mounted, applyTheme])
 
   return (
     <AutoThemeContext.Provider value={{ mode, setMode }}>
